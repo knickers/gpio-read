@@ -17,4 +17,4 @@ if [ ! -d "$PIN" ]; then
 	echo "$1" > '/sys/class/gpio/export'
 fi
 
-echo $(cat "$PIN/value")
+echo -n $(cat "$PIN/value")
